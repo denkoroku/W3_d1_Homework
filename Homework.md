@@ -38,3 +38,7 @@ The cinema would like to make the Iron Man movies a triple billing. Find out the
 <!-- not working but I'm thinking something like -->
 SET show_time = EXTRACT (show_time FROM movie WHERE id = 3 + interval '2 hours')
 WHERE id = 7
+
+Extension
+
+DELETE FROM movies WHERE id IN (3,4)
